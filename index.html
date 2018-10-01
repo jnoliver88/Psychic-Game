@@ -6,23 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>The Psychic Game</title>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
-    <script src="game.js"></script>
-    <h1>
-        <strong><u>THE PSYCHIC GAME</u></strong>
-    </h1>
 
-    <h3>
-        Guess What Letter I'm thinking of
-    </h3>
+    <div class="container">
+        <div class="center">
+            <div class="wrapper">
+                <h1>The Psychic Game</h1>
 
-    <h2>Wins:</h2>
-    <h2>Loses:</h2>
-    <h2>Guesses Left:</h2>
-    <h2>Your Guesses So Far</h2>
+                <h3>Guess what letter I'm thinking of</h3>
+                <h3>Wins:</h3>
+                <span id="attempts"></span>
+                <h3>Losses:</h3>
+                <span id="lost"></span>
 
+                <h3>Guesses Left: </h3>
+                <span id="attempts"></span>
+
+                <h3> Your Guesses so far:</h3>
+                <span id="playerGuess"></span>
+
+            </div>
+        </div>
+
+
+
+        <script src="assets/javascript/game.js/"></script>
 </body>
 
 </html>

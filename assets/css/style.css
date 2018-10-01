@@ -1,0 +1,24 @@
+body {
+    font-family: 'Fondamento', Georgia, 'Times New Roman', serif, cursive;
+    align-content: center;      
+    color: rgb(59, 219, 247);      
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align:center;
+    line-height: 36px;  
+    align-content: center;
+    background-image: url(assets/images/IMG_6869.jpeg);
+}
+
+.container {
+    display: flex;
+    background-color: white;  
+}
+
+
+.center {      
+    width: 1024px;
+    height: 768px;
+    padding-top: 200px;      
+    background-repeat: no-repeat;
+  }
