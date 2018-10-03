@@ -3,16 +3,16 @@ var won = 0;
 var lost = 0;
 var attempts = 9;
 var usedletters = [];
-var letters = "qwertyuiopasdfghjklzxcvbnm"
+var letters = "qwertyuiopasdfghjklzxcvbnm";
 
 
 //GENERATING THE COMPUTERS SECRET LETTER
-function jsGuess() {
+function ranguess() {
     ranLetter = letters[Math.floor(Math.random() * letters.length)];
     console.log(ranLetter);
-    usedletters = [];
+    //usedletters = [];// dont need this
 }
-jsGuess();
+ranguess();
 
 //CAPTURING THE PLAYERS INPUT
 //.onkeyup captures the players input as playerGuess
@@ -39,7 +39,7 @@ document.onkeyup = function (event) {
         won++;
         attempts = 9;
         usedletters = [];
-        jsGuess();
+        ranguess();
         alert("You did it!");
     }
 
@@ -49,7 +49,7 @@ document.onkeyup = function (event) {
         lost++;
         usedletters = [];
         attempts = 9;
-        jsGuess();
+        ranguess();
         alert("Try again");
     }
 
